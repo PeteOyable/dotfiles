@@ -1,0 +1,22 @@
+layout {
+     default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        children
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+    tab name="Backend" split_direction="vertical" {
+        pane name="Docker" cwd="/Users/jboulevart/Projects/mercantile-backend"
+        pane name="Backend" cwd="/Users/jboulevart/Projects/mercantile-backend"
+    }
+    tab name="Frontend" split_direction="vertical" {
+        pane name="Dashboard" cwd="/Users/jboulevart/Projects/mercantile-dashboard"
+        pane name="Storybook"  cwd="/Users/jboulevart/Projects/mercantile-dashboard"
+    }
+     tab name="Git"{
+        pane cwd="/Users/jboulevart/Projects/mercantile-dashboard"
+    }
+}
