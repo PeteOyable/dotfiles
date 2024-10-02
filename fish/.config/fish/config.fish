@@ -20,16 +20,16 @@ abbr --add vi "nvim"
 abbr --add ef "nvim $HOME/.config/fish/config.fish"
 abbr --add ev "nvim $HOME/.config/nvim/" 
 abbr --add em "nvim $HOME/.tmux.conf"
-abbr --add et "nvim $HOME/.config/kitty/kitty.conf"
+abbr --add et "nvim $HOME/.config/wezterm/wezterm.lua"
 
 # -- change directory
 abbr --add cc "cd $HOME/.config"
 abbr --add cf "cd $HOME/.config/fish/"
 abbr --add cv "cd $HOME/.config/nvim/"
-abbr --add ct "cd $HOME/.config/kitty/"
+abbr --add ct "cd $HOME/.config/wezterm//"
 
 abbr --add sf "source $HOME/.config/fish/config.fish"
-abbr --add st "source $HOME/.config/kitty/kitty.conf"
+abbr --add st "source $HOME/.config/wezterm/wezterm.lua"
 
 # others
 abbr --add lg "lazygit"
