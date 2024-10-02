@@ -2,6 +2,11 @@ return {
 	"RRethy/vim-illuminate",
 	lazy = false,
 	config = function()
-		require("illuminate").configure({})
+		require("illuminate").configure({
+			providers = {
+				"lsp",
+				"treesitter",
+			},
+		})
 	end,
 }

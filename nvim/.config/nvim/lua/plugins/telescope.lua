@@ -12,7 +12,6 @@ return {
 	config = function()
 		local telescope = require("telescope")
 		local actions = require("telescope.actions")
-		local trouble = require("trouble.providers.telescope")
 
 		telescope.setup({
 			file_ignore_patterns = { "node_modules", ".git" },
