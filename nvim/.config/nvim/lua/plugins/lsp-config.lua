@@ -104,7 +104,7 @@ return {
 				-- configure graphql language server
 				lspconfig["graphql"].setup({
 					capabilities = capabilities,
-					filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
+					filetypes = { "graphql", "gql" },
 				})
 			end,
 			["emmet_ls"] = function()
@@ -144,9 +144,10 @@ return {
 				lspconfig["eslint_d"].setup({
 					capabilities = capabilities,
 					on_attach = function(client, bufnr)
-						vim.api.nvim_create_autocmd("BufWritePpre", {
-							buffer = bufnr,
-							command = "EslintFixAll",
+						vim.api.nvim_create_autocmd("BufWritePre", {
+							callback = function()
+								vim.lsp.buf.format()
+							end,
 						})
 					end,
 				})

@@ -34,6 +34,7 @@ return {
 				"graphql",
 				"emmet_ls",
 				"prismals",
+				"eslint",
 			},
 		})
 
