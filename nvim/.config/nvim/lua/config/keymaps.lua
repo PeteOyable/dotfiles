@@ -34,10 +34,10 @@ Keymap("n", "=", ":resize -5<CR>", { desc = "Decrement number" }) -- decrement
 Keymap("n", "-", ":resize +5<CR>", { desc = "Decrement number" }) -- decrement
 
 -- window management
-Keymap("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
-Keymap("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) -- split window horizontally
-Keymap("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width & height
-Keymap("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
+Keymap("n", "<leader>sv", "<C-w>v", { desc = "[S]plit [V]ertically" }) -- split window vertically
+Keymap("n", "<leader>sh", "<C-w>s", { desc = "[S]plit [H]orizontally" }) -- split window horizontally
+Keymap("n", "<leader>se", "<C-w>=", { desc = "[S]plit [E]qually" }) -- make split windows equal width & height
+Keymap("n", "<leader>sx", "<cmd>close<CR>", { desc = "[S]plit [C]lose" }) -- close current split window
 
 -- splits navigation
 if os.getenv("TMUX") then
@@ -46,9 +46,6 @@ if os.getenv("TMUX") then
 	Keymap("n", "<C-k>", "<cmd>TmuxNavigateUp<cr>")
 	Keymap("n", "<C-l>", "<cmd>TmuxNavigateRight<cr>")
 end
-
--- buffer navigation
-Keymap("n", "<leader>bx", "<cmd>bd<CR>", { desc = "Close buffer" }) -- close buffer
 
 -- indenting
 Keymap("v", "<", "<gv")

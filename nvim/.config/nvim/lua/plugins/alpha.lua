@@ -12,7 +12,7 @@ return {
 		  ⟋|､      
 		 (°､ ｡ 7   
 		 |､  ~ヽ   
-		 じしf_,)〳
+		 じしf_,)/
 ]]
 
 		dashboard.section.header.val = vim.split(logo, "\n")

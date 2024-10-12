@@ -32,7 +32,22 @@ opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
 
 -- clipboard
-opt.clipboard:append("unnamedplus") -- use system clipboard as default register
+vim.schedule(function()
+	opt.clipboard = "unnamedplus" -- use system clipboard as default register
+end)
+
+-- enable break indent
+opt.breakindent = true
+
+-- save undo history
+opt.undofile = true
+
+-- Decrease update time
+vim.opt.updatetime = 250
+
+-- Decrease mapped sequence wait time
+-- Displays which-key popup sooner
+vim.opt.timeoutlen = 300
 
 -- split windows
 opt.splitright = true -- split vertical window to the right
