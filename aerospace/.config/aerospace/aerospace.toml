@@ -226,5 +226,9 @@ if.app-id = 'com.spotify.client' # Spotify
 run = 'move-node-to-workspace M'
 
 [[on-window-detected]]
+if.app-id = 'com.apple.Music' # Apple Music
+run = 'move-node-to-workspace M'
+
+[[on-window-detected]]
 if.app-id = 'org.jkiss.dbeaver.core.product' # DBeaver
 run = 'move-node-to-workspace D'
