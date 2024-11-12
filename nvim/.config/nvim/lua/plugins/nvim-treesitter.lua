@@ -24,6 +24,7 @@ return {
         "tsx",
         "yaml",
         "html",
+        "http",
         "css",
         "prisma",
         "markdown",
