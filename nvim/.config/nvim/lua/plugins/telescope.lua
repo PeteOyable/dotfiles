@@ -33,7 +33,7 @@ return {
         },
         find_files = {
           hidden = true,
-          include_gitignore = true,
+          no_ignore = true,
         },
       },
       defaults = {
@@ -58,6 +58,7 @@ return {
       extensions = {
         file_browser = {
           hidden = true,
+          no_ignore = true,
           hijack_netrw = true,
           display_stat = {
             mode = false,
