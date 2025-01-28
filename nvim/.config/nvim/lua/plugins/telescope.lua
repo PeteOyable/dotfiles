@@ -30,10 +30,12 @@ return {
 			pickers = {
 				oldfiles = {
 					only_cwd = true,
+					file_ignore_patterns = { "node_modules", ".git", ".next" },
 				},
 				find_files = {
 					hidden = true,
 					no_ignore = true,
+					file_ignore_patterns = { "node_modules", ".git", ".next" },
 				},
 			},
 			defaults = {
@@ -57,8 +59,8 @@ return {
 			},
 			extensions = {
 				file_browser = {
+					file_ignore_patterns = { "node_modules", ".git", ".next" },
 					hidden = true,
-					no_ignore = true,
 					hijack_netrw = true,
 					display_stat = {
 						mode = false,
